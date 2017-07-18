@@ -11,6 +11,8 @@ import com.yyyu.ssm.pojo.SysUser;
  */
 public interface SysUserBiz {
 
+    SysUser getSysUserByUserId(long userId);
+
     SysUser checkLogin(LoginVo loginVo);
 
 }

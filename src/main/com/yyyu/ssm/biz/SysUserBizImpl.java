@@ -19,6 +19,11 @@ public class SysUserBizImpl implements SysUserBiz {
     SysUserMapper sysUserMapper;
 
     @Override
+    public SysUser getSysUserByUserId(long userId) {
+        return sysUserMapper.getSysUserByUserId(userId);
+    }
+
+    @Override
     public SysUser checkLogin(LoginVo loginVo) {
 
         return sysUserMapper.getSysUserByLoginVo(loginVo);
