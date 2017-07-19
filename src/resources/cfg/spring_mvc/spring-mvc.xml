@@ -9,7 +9,7 @@
     <context:component-scan base-package="com.yyyu.ssm.controller"/>
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven />
-    <context:property-placeholder location="classpath:cfg/resource.properties"/>
+    <context:property-placeholder location="classpath:cfg/spring_mvc/resource.properties"/>
     <!-- 配置视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
          <!--配置逻辑视图的前缀 -->

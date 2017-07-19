@@ -2,6 +2,8 @@ package com.yyyu.ssm.biz;
 
 import com.yyyu.ssm.pojo.BaseDict;
 
+import java.util.List;
+
 /**
  * 功能：数据字典
  *
@@ -10,6 +12,6 @@ import com.yyyu.ssm.pojo.BaseDict;
  */
 public interface BaseDictBiz {
 
-    BaseDict getBaseDictByTypeCode(String typeCode);
+    List<BaseDict> getBaseDictByTypeCode(String typeCode);
 
 }

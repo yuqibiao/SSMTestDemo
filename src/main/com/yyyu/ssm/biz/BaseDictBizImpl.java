@@ -5,6 +5,8 @@ import com.yyyu.ssm.pojo.BaseDict;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 功能：
  *
@@ -19,7 +21,7 @@ public class BaseDictBizImpl implements BaseDictBiz {
     private BaseDictMapper baseDictMapper;
 
     @Override
-    public BaseDict getBaseDictByTypeCode(String typeCode) {
+    public List<BaseDict> getBaseDictByTypeCode(String typeCode) {
         return baseDictMapper.getBaseDictByTypeCode(typeCode);
     }
 }
