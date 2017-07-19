@@ -448,9 +448,9 @@
         });
     }
 
-    function deleteCustomer(id) {
+    function deleteCustomer(custId) {
         if (confirm('确实要删除该客户吗?')) {
-            $.post("<%=basePath%>customer/delete.action", {"id": id}, function (data) {
+            $.post("<%=basePath%>customer/deleteCustomer.action", {"custId": custId}, function (data) {
                 alert("客户删除更新成功！");
                 window.location.reload();
             });

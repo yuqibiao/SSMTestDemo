@@ -85,7 +85,7 @@
                 cust_source = #{custSource},
             </if>
             <if test="custIndustry!=null and custIndustry!=''">
-                cust_industry = #{custIndustry}
+                cust_industry = #{custIndustry},
             </if>
             <if test="custLevel!=null and custLevel!=''">
                 cust_level = #{custLevel},

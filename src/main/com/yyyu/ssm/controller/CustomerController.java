@@ -39,7 +39,7 @@ public class CustomerController {
 
 
     @RequestMapping(value = "/customer/deleteCustomer.action", method = RequestMethod.POST)
-    public String deleteCustomerByCustId(long custId){
+    public @ResponseBody String deleteCustomerByCustId(long custId){
         customerBiz.deleteCustomerByCustId(custId);
         return "删除成功";
     }
