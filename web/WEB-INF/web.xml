@@ -5,7 +5,7 @@
          version="3.1">
 
     <welcome-file-list>
-        <welcome-file>/customer/list.action</welcome-file>
+        <welcome-file>/WEB-INF/view/login.jsp</welcome-file>
     </welcome-file-list>
 
     <!-- 配置spring -->

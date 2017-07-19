@@ -46,7 +46,7 @@ public class LoginController {
         loginVo.setUserPassword(userPassword);
         SysUser user = sysUserBiz.checkLogin(loginVo);
         if(user !=null){
-            result =  "userInfo";
+            result =  "redirect:/customer/list.action";
             session.setAttribute("userInfo" , user);
         }else{
             result =  "login";
